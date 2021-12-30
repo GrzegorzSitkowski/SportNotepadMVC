@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportNotepadMVC.Web", "Spor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportNotepadMVC.Application", "SportNotepadMVC.Application\SportNotepadMVC.Application.csproj", "{001D38EE-03F3-44AA-9577-74BA678022BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportNotepadMVC.Infrastructure", "SportNotepadMVC.Infrastructure\SportNotepadMVC.Infrastructure.csproj", "{1CFF41D6-EC58-4040-B1CA-47CD67C3E49A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{001D38EE-03F3-44AA-9577-74BA678022BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{001D38EE-03F3-44AA-9577-74BA678022BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{001D38EE-03F3-44AA-9577-74BA678022BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CFF41D6-EC58-4040-B1CA-47CD67C3E49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CFF41D6-EC58-4040-B1CA-47CD67C3E49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CFF41D6-EC58-4040-B1CA-47CD67C3E49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFF41D6-EC58-4040-B1CA-47CD67C3E49A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
