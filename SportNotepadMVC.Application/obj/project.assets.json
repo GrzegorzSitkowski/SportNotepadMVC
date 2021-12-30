@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "SportNotepadMVC.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SportNotepadMVC.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SportNotepadMVC.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SportNotepadMVC.Domain/1.0.0": {
+      "type": "project",
+      "path": "../SportNotepadMVC.Domain/SportNotepadMVC.Domain.csproj",
+      "msbuildProject": "../SportNotepadMVC.Domain/SportNotepadMVC.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "SportNotepadMVC.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\sitko\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Domain\\SportNotepadMVC.Domain.csproj": {
+              "projectPath": "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Domain\\SportNotepadMVC.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1857,6 +1857,42 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "SportNotepadMVC.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SportNotepadMVC.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SportNotepadMVC.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SportNotepadMVC.Application.dll": {}
+        }
+      },
+      "SportNotepadMVC.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SportNotepadMVC.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SportNotepadMVC.Domain.dll": {}
+        }
+      },
+      "SportNotepadMVC.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SportNotepadMVC.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SportNotepadMVC.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SportNotepadMVC.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -6707,6 +6743,21 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "SportNotepadMVC.Application/1.0.0": {
+      "type": "project",
+      "path": "../SportNotepadMVC.Application/SportNotepadMVC.Application.csproj",
+      "msbuildProject": "../SportNotepadMVC.Application/SportNotepadMVC.Application.csproj"
+    },
+    "SportNotepadMVC.Domain/1.0.0": {
+      "type": "project",
+      "path": "../SportNotepadMVC.Domain/SportNotepadMVC.Domain.csproj",
+      "msbuildProject": "../SportNotepadMVC.Domain/SportNotepadMVC.Domain.csproj"
+    },
+    "SportNotepadMVC.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../SportNotepadMVC.Infrastructure/SportNotepadMVC.Infrastructure.csproj",
+      "msbuildProject": "../SportNotepadMVC.Infrastructure/SportNotepadMVC.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6716,7 +6767,9 @@
       "Microsoft.AspNetCore.Identity.UI >= 5.0.13",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 5.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.13",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.13"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.13",
+      "SportNotepadMVC.Application >= 1.0.0",
+      "SportNotepadMVC.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6750,7 +6803,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Application\\SportNotepadMVC.Application.csproj": {
+              "projectPath": "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Application\\SportNotepadMVC.Application.csproj"
+            },
+            "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Infrastructure\\SportNotepadMVC.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Infrastructure\\SportNotepadMVC.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

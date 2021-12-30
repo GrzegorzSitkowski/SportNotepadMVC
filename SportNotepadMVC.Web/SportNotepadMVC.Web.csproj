@@ -15,4 +15,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.13" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SportNotepadMVC.Application\SportNotepadMVC.Application.csproj" />
+    <ProjectReference Include="..\SportNotepadMVC.Infrastructure\SportNotepadMVC.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
