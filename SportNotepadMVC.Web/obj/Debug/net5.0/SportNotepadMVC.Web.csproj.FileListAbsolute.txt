@@ -392,3 +392,9 @@ C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\Spo
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\obj\Debug\net5.0\ref\SportNotepadMVC.Web.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\obj\Debug\net5.0\SportNotepadMVC.Web.pdb
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\obj\Debug\net5.0\SportNotepadMVC.Web.genruntimeconfig.cache
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\SportNotepadMVC.Application.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\SportNotepadMVC.Domain.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\SportNotepadMVC.Infrastructure.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\SportNotepadMVC.Application.pdb
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\SportNotepadMVC.Infrastructure.pdb
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\SportNotepadMVC.Domain.pdb

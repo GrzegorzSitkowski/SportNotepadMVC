@@ -1,0 +1,15 @@
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\bin\Debug\net5.0\SportNotepadMVC.Infrastructure.deps.json
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\bin\Debug\net5.0\SportNotepadMVC.Infrastructure.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\bin\Debug\net5.0\ref\SportNotepadMVC.Infrastructure.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\bin\Debug\net5.0\SportNotepadMVC.Infrastructure.pdb
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\bin\Debug\net5.0\SportNotepadMVC.Domain.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\bin\Debug\net5.0\SportNotepadMVC.Domain.pdb
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\obj\Debug\net5.0\SportNotepadMVC.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\obj\Debug\net5.0\SportNotepadMVC.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\obj\Debug\net5.0\SportNotepadMVC.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\obj\Debug\net5.0\SportNotepadMVC.Infrastructure.AssemblyInfo.cs
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\obj\Debug\net5.0\SportNotepadMVC.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\obj\Debug\net5.0\SportNotepadMVC.Infrastructure.csproj.CopyComplete
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\obj\Debug\net5.0\SportNotepadMVC.Infrastructure.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\obj\Debug\net5.0\ref\SportNotepadMVC.Infrastructure.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\obj\Debug\net5.0\SportNotepadMVC.Infrastructure.pdb

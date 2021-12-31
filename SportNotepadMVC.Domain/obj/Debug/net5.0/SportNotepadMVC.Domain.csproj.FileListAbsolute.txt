@@ -1,0 +1,12 @@
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Domain\bin\Debug\net5.0\SportNotepadMVC.Domain.deps.json
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Domain\bin\Debug\net5.0\SportNotepadMVC.Domain.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Domain\bin\Debug\net5.0\ref\SportNotepadMVC.Domain.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Domain\bin\Debug\net5.0\SportNotepadMVC.Domain.pdb
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Domain\obj\Debug\net5.0\SportNotepadMVC.Domain.csproj.AssemblyReference.cache
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Domain\obj\Debug\net5.0\SportNotepadMVC.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Domain\obj\Debug\net5.0\SportNotepadMVC.Domain.AssemblyInfoInputs.cache
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Domain\obj\Debug\net5.0\SportNotepadMVC.Domain.AssemblyInfo.cs
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Domain\obj\Debug\net5.0\SportNotepadMVC.Domain.csproj.CoreCompileInputs.cache
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Domain\obj\Debug\net5.0\SportNotepadMVC.Domain.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Domain\obj\Debug\net5.0\ref\SportNotepadMVC.Domain.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Domain\obj\Debug\net5.0\SportNotepadMVC.Domain.pdb
