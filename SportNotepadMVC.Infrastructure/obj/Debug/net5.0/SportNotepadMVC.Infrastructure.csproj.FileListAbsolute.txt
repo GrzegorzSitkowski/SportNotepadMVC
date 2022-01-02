@@ -13,3 +13,6 @@ C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\Spo
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\obj\Debug\net5.0\SportNotepadMVC.Infrastructure.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\obj\Debug\net5.0\ref\SportNotepadMVC.Infrastructure.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\obj\Debug\net5.0\SportNotepadMVC.Infrastructure.pdb
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\bin\Debug\net5.0\SportNotepadMVC.Infrastructure.runtimeconfig.json
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\bin\Debug\net5.0\SportNotepadMVC.Infrastructure.runtimeconfig.dev.json
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Infrastructure\obj\Debug\net5.0\SportNotepadMVC.Infrastructure.genruntimeconfig.cache

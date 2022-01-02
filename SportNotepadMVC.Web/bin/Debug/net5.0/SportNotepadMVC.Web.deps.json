@@ -1660,6 +1660,9 @@
       },
       "SportNotepadMVC.Infrastructure/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.13",
+          "Microsoft.EntityFrameworkCore": "5.0.13",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.13",
           "SportNotepadMVC.Domain": "1.0.0"
         },
         "runtime": {
