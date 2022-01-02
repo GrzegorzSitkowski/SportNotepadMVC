@@ -10,7 +10,7 @@ namespace SportNotepadMVC.Domain.Model
     {
         public int Id { get; set; }
         public string FullName { get; set; }
-        public DateTime Age { get; set; }
+        public int Age { get; set; }
         public float Weight { get; set; }
         public string Pb5k { get; set; }
         public string Pb10k { get; set; }

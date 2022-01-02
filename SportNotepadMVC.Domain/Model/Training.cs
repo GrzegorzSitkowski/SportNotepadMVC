@@ -9,6 +9,7 @@ namespace SportNotepadMVC.Domain.Model
     public class Training
     {
         public int Id { get; set; }
+        public DateTime Date { get; set; }
         public float Distance { get; set; }
         public string Result { get; set; }
         public string AveragePace { get; set; }
