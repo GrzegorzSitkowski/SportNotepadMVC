@@ -12,7 +12,6 @@ namespace SportNotepadMVC.Domain.Interfaces
         int AddCompetition(Competition competition);
         void EditCompetition(Competition competition);
         void DeleteCompetition(int id);
-        void ViewCompetition(int id);
         Competition GetCompetitionById(int competitionId);
         IQueryable<Competition> GetAllCompetitions();
 
