@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SportNotepadMVC.Application.Interfaces;
 using SportNotepadMVC.Application.ViewModels.Competition;
+using SportNotepadMVC.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,12 @@ namespace SportNotepadMVC.Web.Controllers
     public class CompetitionController : Controller
     {
         private readonly ICompetitionService _competitionService;
+        private readonly Context _context;
 
-        public CompetitionController(ICompetitionService competitionService)
+        public CompetitionController(ICompetitionService competitionService, Context context)
         {
             _competitionService = competitionService;
+            _context = context;
         }
         [HttpGet]
         public IActionResult Index()
@@ -42,7 +45,8 @@ namespace SportNotepadMVC.Web.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            var competition = _competitionService.GetCompetitionDetails(id);
+            return View(competition);
         }
 
         [HttpGet]
@@ -83,21 +87,8 @@ namespace SportNotepadMVC.Web.Controllers
 
         public ActionResult Delete(int id)
         {
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            _competitionService.DeleteCompetition(id);
+            return RedirectToAction("Index");
         }
     }
 }
