@@ -55,7 +55,6 @@ namespace SportNotepadMVC.Web.Controllers
             return View(new NewCompetitionVm());
         }
         [HttpPost]
-        //[ValidateAntiForgeryToken]
         public ActionResult Create(NewCompetitionVm model)
         {
             if(ModelState.IsValid)
@@ -66,23 +65,18 @@ namespace SportNotepadMVC.Web.Controllers
             return View(model);
         }
 
+        [HttpGet]
         public ActionResult Edit(int id)
         {
-            return View();
+            var competition = _competitionService.CompetitionForEdit(id);
+            return View(competition);
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(NewCompetitionVm model)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            _competitionService.EditCompetition(model);
+            return RedirectToAction("Index");
         }
 
         public ActionResult Delete(int id)
