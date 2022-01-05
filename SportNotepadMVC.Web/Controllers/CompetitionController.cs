@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SportNotepadMVC.Application.Interfaces;
+using SportNotepadMVC.Application.ViewModels.Competition;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +11,12 @@ namespace SportNotepadMVC.Web.Controllers
 {
     public class CompetitionController : Controller
     {
-        // GET: CompetitionController
+        private readonly ICompetitionService _competitionService;
+
+        public CompetitionController(ICompetitionService competitionService)
+        {
+            _competitionService = competitionService;
+        }
         public ActionResult Index()
         {
             return View();
@@ -21,25 +28,21 @@ namespace SportNotepadMVC.Web.Controllers
             return View();
         }
 
-        // GET: CompetitionController/Create
+        [HttpGet]
         public ActionResult Create()
         {
-            return View();
+            return View(new NewCompetitionVm());
         }
-
-        // POST: CompetitionController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        //[ValidateAntiForgeryToken]
+        public ActionResult Create(NewCompetitionVm model)
         {
-            try
+            if(ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                var competition = _competitionService.AddCopmetition(model);
+                return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+            return View(model);
         }
 
         // GET: CompetitionController/Edit/5
