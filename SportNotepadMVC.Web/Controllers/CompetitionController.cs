@@ -17,12 +17,29 @@ namespace SportNotepadMVC.Web.Controllers
         {
             _competitionService = competitionService;
         }
-        public ActionResult Index()
+        [HttpGet]
+        public IActionResult Index()
         {
-            return View();
+            var model = _competitionService.GetAllCompetitions(5, 1, "");
+            return View(model);
         }
 
-        // GET: CompetitionController/Details/5
+        [HttpPost]
+        public IActionResult Index(int pageSize, int? pageNo, string searchString)
+        {
+            if(!pageNo.HasValue)
+            {
+                pageNo = 1;
+            }
+            if(searchString is null)
+            {
+                searchString = String.Empty;
+            }
+
+            var model = _competitionService.GetAllCompetitions(pageSize, pageNo.Value, searchString);
+            return View(model);
+        }
+
         public ActionResult Details(int id)
         {
             return View();
@@ -45,13 +62,11 @@ namespace SportNotepadMVC.Web.Controllers
             return View(model);
         }
 
-        // GET: CompetitionController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: CompetitionController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -66,13 +81,11 @@ namespace SportNotepadMVC.Web.Controllers
             }
         }
 
-        // GET: CompetitionController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: CompetitionController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

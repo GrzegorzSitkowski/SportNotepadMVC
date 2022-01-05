@@ -46,9 +46,9 @@ namespace SportNotepadMVC.Application.Services
             _competitionRepo.EditCompetition(competition);
         }
 
-        public ListCompetitionForListVm GetAllCompetitions(int pageNo, int pageSize, string searchString)
+        public ListCompetitionForListVm GetAllCompetitions(int pageSize, int pageNo, string searchString)
         {
-            var competitions = _competitionRepo.GetAllCompetitions().Where(p => p.Id.ToString().StartsWith(searchString))
+            var competitions = _competitionRepo.GetAllCompetitions().Where(p => p.Name.StartsWith(searchString))
                 .ProjectTo<CompetitionForListVm>(_mapper.ConfigurationProvider).ToList();
 
             var competitionToShow = competitions.Skip(pageSize * (pageNo - 1)).Take(pageSize).ToList();
