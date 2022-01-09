@@ -15,6 +15,7 @@ namespace SportNotepadMVC.Application
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddTransient<ICompetitionService, CompetitionService>();
+            services.AddTransient<ITrainingService, TrainingService>();
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             return services;
         }

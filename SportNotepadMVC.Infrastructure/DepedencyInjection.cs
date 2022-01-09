@@ -14,6 +14,7 @@ namespace SportNotepadMVC.Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services)
         {
             services.AddTransient<ICompetitionRepository, CompetitionRepository>();
+            services.AddTransient<ITrainingRepository, TrainingRepository>();
             return services;
         }
     }
