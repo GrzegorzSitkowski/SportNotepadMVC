@@ -44,7 +44,7 @@ namespace SportNotepadMVC.Infrastructure.Repositories
             _context.SaveChanges();
         }
 
-        public IQueryable<Training> GetAllTraining()
+        public IQueryable<Training> GetAllTrainings()
         {
             return _context.Trainings.Where(p => true);
         }

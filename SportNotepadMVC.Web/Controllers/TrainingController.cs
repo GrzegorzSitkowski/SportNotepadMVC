@@ -20,12 +20,31 @@ namespace SportNotepadMVC.Web.Controllers
             _context = context;
             _traningService = trainingService;
         }
+
+        [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            var model = _traningService.GetAllTrainigs(5,1,"");
+            return View(model);
         }
 
-        
+        [HttpPost]
+        public ActionResult Index(int pageSize, int? pageNo, string searchString)
+        {
+            if(!pageNo.HasValue)
+            {
+                pageNo = 1;
+            }
+            if(searchString is null)
+            {
+                searchString = String.Empty;
+            }
+
+            var model = _traningService.GetAllTrainigs(pageSize, pageNo.Value, searchString);
+            return View(model);
+        }
+
+
         public ActionResult Details(int id)
         {
             return View();

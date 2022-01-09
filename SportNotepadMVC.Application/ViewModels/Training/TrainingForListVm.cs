@@ -15,7 +15,8 @@ namespace SportNotepadMVC.Application.ViewModels.Training
         public float Distance { get; set; }
         public string Result { get; set; }
         public string AveragePace { get; set; }
-        public void Mapper(Profile profile)
+
+        public void Mapping(Profile profile)
         {
             profile.CreateMap<Domain.Model.Training, TrainingForListVm>();
         }

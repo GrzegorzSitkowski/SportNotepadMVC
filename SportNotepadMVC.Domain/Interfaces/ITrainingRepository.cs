@@ -13,6 +13,6 @@ namespace SportNotepadMVC.Domain.Interfaces
         void EditTraining(Training training);
         void DeleteTraining(int id);
         Training GetTrainingById(int trainingId);
-        IQueryable<Training> GetAllTraining();
+        IQueryable<Training> GetAllTrainings();
     }
 }
