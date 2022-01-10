@@ -69,25 +69,20 @@ namespace SportNotepadMVC.Web.Controllers
             return View(model);
         }
 
-        
+        [HttpGet]
         public ActionResult Edit(int id)
-        { 
-            return View();
+        {
+            var training = _traningService.TrainingForEdit(id);
+            return View(training);
         }
 
         
         [HttpPost]
         //[ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(NewTrainingVm model)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            _traningService.EditTraining(model);
+            return RedirectToAction("Index");
         }
 
         
