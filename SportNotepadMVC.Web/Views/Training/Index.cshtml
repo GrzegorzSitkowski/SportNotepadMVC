@@ -1,0 +1,100 @@
+﻿@model SportNotepadMVC.Application.ViewModels.Training.ListTrainingForListVm
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Historia treninigów</h1>
+
+<p>
+    <a asp-action="Create">Dodaj nowy</a>
+</p>
+<form asp-action="Index" asp-controller="Trainig" method="post">
+    <div class="row">
+        <input type="text" asp-for="SearchString" name="SearchString" id="searchString" />
+    </div>
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Data
+                    </th>
+                    <th>
+                        Dysatns
+                    </th>
+                    <th>
+                        Wynik
+                    </th>
+                    <th>
+                        Średnie tempo
+                    </th>
+
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Trainings)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </td>
+                        <td>
+                            @item.Date.ToString("dd.MM.yyyy")
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Distance)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Result)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AveragePace)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edytuj", "Edit", new { id = item.Id }) |
+                            @Html.ActionLink("Szczegóły", "Details", new { id = item.Id }) |
+                            @Html.ActionLink("Usuń", "Delete", new { id = item.Id })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <table>
+            <tr>
+                @for (int i = 1; i <= Math.Ceiling(Model.Count / (double)Model.PageSize); i++)
+                {
+                    <td>
+                        @if (i != Model.CurrentPage)
+                        {
+                            <a href="javascript:PagerClick(@i)">@i</a>
+                        }
+                        else
+                        {
+                            <span>@i</span>
+                        }
+                    </td>
+                }
+            </tr>
+        </table>
+        <input type="hidden" name="pageNo" id="pageNo" />
+        <input type="hidden" name="pageSize" id="pageSize" value="10" />
+    </div>
+</form>
+
+@section Scripts
+{
+    <script type="text/javascript">
+        function PagerClick(index)
+        {
+            document.getElementById("pageNo").value = index;
+            document.forms[0].submit();
+        }
+    </script>
+}

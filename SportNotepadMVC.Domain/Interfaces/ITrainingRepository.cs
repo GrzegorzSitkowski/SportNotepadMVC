@@ -9,10 +9,10 @@ namespace SportNotepadMVC.Domain.Interfaces
 {
     public interface ITrainingRepository
     {
-        int AddTraining(Training traing);
+        int AddTraining(Training trainig);
         void EditTraining(Training training);
         void DeleteTraining(int id);
         Training GetTrainingById(int trainingId);
-        IQueryable<Training> GetAllTraining();
+        IQueryable<Training> GetAllTrainings();
     }
 }
