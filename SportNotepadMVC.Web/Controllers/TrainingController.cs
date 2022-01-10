@@ -88,22 +88,8 @@ namespace SportNotepadMVC.Web.Controllers
         
         public ActionResult Delete(int id)
         {
-            return View();
-        }
-
-        
-        [HttpPost]
-        //[ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            _traningService.DeleteTraining(id);
+            return RedirectToAction("Index");
         }
     }
 }
