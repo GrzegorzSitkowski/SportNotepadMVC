@@ -44,10 +44,10 @@ namespace SportNotepadMVC.Web.Controllers
             return View(model);
         }
 
-
         public ActionResult Details(int id)
         {
-            return View();
+            var training = _traningService.GetTrainingDetails(id);
+            return View(training);
         }
 
         [HttpGet]
@@ -71,7 +71,7 @@ namespace SportNotepadMVC.Web.Controllers
 
         
         public ActionResult Edit(int id)
-        {
+        { 
             return View();
         }
 
