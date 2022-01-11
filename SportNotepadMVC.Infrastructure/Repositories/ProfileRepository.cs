@@ -17,24 +17,24 @@ namespace SportNotepadMVC.Infrastructure.Repositories
             _context = context;
         }
 
-        public int FillProfile(ProfileUser profile)
+        public int FillProfile(ProfileUser profileUser)
         {
-            _context.ProfileUsers.Add(profile);
+            _context.ProfileUsers.Add(profileUser);
             _context.SaveChanges();
-            return profile.Id;
+            return profileUser.Id;
         }
 
-        public void EditProfile(ProfileUser profile)
+        public void EditProfile(ProfileUser profileUser)
         {
-            _context.ProfileUsers.Attach(profile);
-            _context.Entry(profile).Property("FullName").IsModified = true;
-            _context.Entry(profile).Property("Age").IsModified = true;
-            _context.Entry(profile).Property("Weight").IsModified = true;
-            _context.Entry(profile).Property("Pb5k").IsModified = true;
-            _context.Entry(profile).Property("Pb10k").IsModified = true;
-            _context.Entry(profile).Property("PbHalfMarathon").IsModified = true;
-            _context.Entry(profile).Property("PbMarathon").IsModified = true;
-            _context.Entry(profile).Property("CountCompetitions").IsModified = true;
+            _context.ProfileUsers.Attach(profileUser);
+            _context.Entry(profileUser).Property("FullName").IsModified = true;
+            _context.Entry(profileUser).Property("Age").IsModified = true;
+            _context.Entry(profileUser).Property("Weight").IsModified = true;
+            _context.Entry(profileUser).Property("Pb5k").IsModified = true;
+            _context.Entry(profileUser).Property("Pb10k").IsModified = true;
+            _context.Entry(profileUser).Property("PbHalfMarathon").IsModified = true;
+            _context.Entry(profileUser).Property("PbMarathon").IsModified = true;
+            _context.Entry(profileUser).Property("CountCompetitions").IsModified = true;
             _context.SaveChanges();
         }      
     }

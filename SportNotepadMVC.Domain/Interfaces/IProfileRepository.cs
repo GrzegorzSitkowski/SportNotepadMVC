@@ -9,7 +9,7 @@ namespace SportNotepadMVC.Domain.Interfaces
 {
     public interface IProfileUserRepository
     {
-        int FillProfile(ProfileUser profile);
-        void EditProfile(ProfileUser profile);
+        int FillProfile(ProfileUser profileUser);
+        void EditProfile(ProfileUser profileUser);
     }
 }
