@@ -8,25 +8,25 @@ using System.Threading.Tasks;
 
 namespace SportNotepadMVC.Infrastructure.Repositories
 {
-    public class ProfileRepository : IProfileRepository
+    public class ProfileUserRepository : IProfileUserRepository
     {
         private readonly Context _context;
 
-        public ProfileRepository(Context context)
+        public ProfileUserRepository(Context context)
         {
             _context = context;
         }
 
-        public int FillProfile(Profile profile)
+        public int FillProfile(ProfileUser profile)
         {
-            _context.Profiles.Add(profile);
+            _context.ProfileUsers.Add(profile);
             _context.SaveChanges();
             return profile.Id;
         }
 
-        public void EditProfile(Profile profile)
+        public void EditProfile(ProfileUser profile)
         {
-            _context.Profiles.Attach(profile);
+            _context.ProfileUsers.Attach(profile);
             _context.Entry(profile).Property("FullName").IsModified = true;
             _context.Entry(profile).Property("Age").IsModified = true;
             _context.Entry(profile).Property("Weight").IsModified = true;

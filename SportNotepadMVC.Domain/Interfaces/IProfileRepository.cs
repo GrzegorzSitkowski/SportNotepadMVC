@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace SportNotepadMVC.Domain.Interfaces
 {
-    public interface IProfileRepository
+    public interface IProfileUserRepository
     {
-        int FillProfile(Profile profile);
-        void EditProfile(Profile profile);
+        int FillProfile(ProfileUser profile);
+        void EditProfile(ProfileUser profile);
     }
 }

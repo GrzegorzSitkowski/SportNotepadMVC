@@ -12,7 +12,7 @@ namespace SportNotepadMVC.Infrastructure
     public class Context : IdentityDbContext
     {
         public DbSet<Competition> Competitions { get; set; }
-        public DbSet<Profile> Profiles { get; set; }
+        public DbSet<ProfileUser> ProfileUsers { get; set; }
         public DbSet<Training> Trainings { get; set; }
 
         public Context(DbContextOptions options) : base(options)
