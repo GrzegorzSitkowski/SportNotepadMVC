@@ -10,7 +10,7 @@ namespace SportNotepadMVC.Application.Interfaces
     public interface IProfileUserService
     {
         int FillProfileUser(NewProfileUserVm profileUser);
-        void EditProfileUser(NewProfileUserVm profileUse);
+        void EditProfileUser(NewProfileUserVm model);
         ProfileUserDisplayVm DisplayProfileUser();
     }
 }
