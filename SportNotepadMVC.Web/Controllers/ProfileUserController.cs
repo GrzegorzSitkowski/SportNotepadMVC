@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SportNotepadMVC.Application.Interfaces;
+using SportNotepadMVC.Application.ViewModels.ProfileUser;
 using SportNotepadMVC.Infrastructure;
 using System;
 using System.Collections.Generic;
@@ -26,23 +27,19 @@ namespace SportNotepadMVC.Web.Controllers
             return View(model);
         }
 
-        public ActionResult Edit(int id)
+        [HttpGet]
+        public ActionResult Edit()
         {
-            return View();
+            var profileUser = _profileUserService.ProfileUserForEdit();
+            return View(profileUser);
         }
 
         [HttpPost]
         //[ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(NewProfileUserVm model)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            _profileUserService.EditProfileUser(model);
+            return RedirectToAction("Details");
         }
     }
 }
