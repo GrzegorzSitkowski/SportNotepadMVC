@@ -17,12 +17,12 @@ namespace SportNotepadMVC.Infrastructure.Repositories
             _context = context;
         }
 
-        public int FillProfile(ProfileUser profileUser)
+        /*public int FillProfile(ProfileUser profileUser)
         {
             _context.ProfileUsers.Add(profileUser);
             _context.SaveChanges();
             return profileUser.Id;
-        }
+        }*/
 
         public void EditProfile(ProfileUser profileUser)
         {

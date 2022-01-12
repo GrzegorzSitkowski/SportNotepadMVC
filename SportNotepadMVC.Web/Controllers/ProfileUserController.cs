@@ -20,35 +20,10 @@ namespace SportNotepadMVC.Web.Controllers
             _profileUserService = profileUserService;
         }
 
-        public ActionResult Index()
-        { 
-            return View();
-        }
-
         public ActionResult Details()
         {
             var model = _profileUserService.DisplayProfileUser();
             return View(model);
-        }
-
-        public ActionResult Create()
-        {
-
-            return View();
-        }
-
-        [HttpPost]
-        //[ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
         }
 
         public ActionResult Edit(int id)

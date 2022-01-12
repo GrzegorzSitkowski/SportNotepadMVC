@@ -34,11 +34,11 @@ namespace SportNotepadMVC.Application.Services
             _profileUserRepo.EditProfile(profileUser);
         }
 
-        public int FillProfileUser(NewProfileUserVm profileUser)
+        public NewProfileUserVm ProfileUserForEdit()
         {
-            var profileUs = _mapper.Map<ProfileUser>(profileUser);
-            var id = _profileUserRepo.FillProfile(profileUs);
-            return id;
+            var profileUser = _profileUserRepo.GetProfileUser();
+            var profileUserVm = _mapper.Map<NewProfileUserVm>(profileUser);
+            return profileUserVm;
         }
     }
 }
