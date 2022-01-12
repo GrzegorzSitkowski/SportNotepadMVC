@@ -23,7 +23,9 @@ namespace SportNotepadMVC.Application.Services
         }
         public ProfileUserDisplayVm DisplayProfileUser()
         {
-            throw new NotImplementedException();
+            var profileUser = _profileUserRepo.GetProfileUser();
+            var profileUserVm = _mapper.Map<ProfileUserDisplayVm>(profileUser);
+            return profileUserVm;
         }
 
         public void EditProfileUser(NewProfileUserVm model)

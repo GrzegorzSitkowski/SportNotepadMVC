@@ -10,6 +10,7 @@ namespace SportNotepadMVC.Application.ViewModels.ProfileUser
 {
     public class ProfileUserDisplayVm : IMapFrom<Domain.Model.ProfileUser>
     {
+        public int Id { get; set; }
         public string FullName { get; set; }
         public int Age { get; set; }
         public string Weight { get; set; }

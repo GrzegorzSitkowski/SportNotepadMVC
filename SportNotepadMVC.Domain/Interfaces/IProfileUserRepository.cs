@@ -11,5 +11,6 @@ namespace SportNotepadMVC.Domain.Interfaces
     {
         int FillProfile(ProfileUser profileUser);
         void EditProfile(ProfileUser profileUser);
+        ProfileUser GetProfileUser();
     }
 }
