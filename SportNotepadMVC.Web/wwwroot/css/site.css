@@ -19,6 +19,32 @@ a {
     color: #0366d6;
 }
 
+th {
+    text-align: center;
+    background-color: #109c51;
+    border-left: solid;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    color: lightgray;
+}
+
+td {
+    background-color: #09ab54;
+    text-align: center;
+    border-left: solid;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-color:lightgray;
+}
+
+#page {
+    background-color: #22b374;
+    border-left: hidden;
+    border-right: hidden;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;

@@ -13,6 +13,7 @@
     <div class="row">
         <input type="text" asp-for="SearchString" name="SearchString" id="searchString" />
     </div>
+    <br />
     <div class="row">
         <table class="table">
             <thead>
@@ -73,7 +74,7 @@
                     <td>
                         @if (i != Model.CurrentPage)
                         {
-                            <a href="javascript:PagerClick(@i)">@i</a>
+                            <a id="page" href="javascript:PagerClick(@i)">@i</a>
                         }
                         else
                         {
