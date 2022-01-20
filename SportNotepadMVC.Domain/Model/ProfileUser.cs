@@ -17,5 +17,6 @@ namespace SportNotepadMVC.Domain.Model
         public string PbHalfMarathon { get; set; }
         public string PbMarathon { get; set; }
         public int CountCompetitions { get; set; }
+        public string ProfilePicture { get; set; }
     }
 }

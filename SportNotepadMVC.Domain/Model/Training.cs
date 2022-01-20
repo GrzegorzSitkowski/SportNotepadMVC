@@ -10,10 +10,10 @@ namespace SportNotepadMVC.Domain.Model
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
-        public float Distance { get; set; }
+        public string Distance { get; set; }
         public string Result { get; set; }
         public string AveragePace { get; set; }
-        public string Localization { get; set; }
+        public string Location { get; set; }
         public string Comment { get; set; }
     }
 }
