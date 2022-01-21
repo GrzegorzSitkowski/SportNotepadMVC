@@ -35,6 +35,7 @@ namespace SportNotepadMVC.Infrastructure.Repositories
             _context.Entry(profileUser).Property("PbHalfMarathon").IsModified = true;
             _context.Entry(profileUser).Property("PbMarathon").IsModified = true;
             _context.Entry(profileUser).Property("CountCompetitions").IsModified = true;
+            _context.Entry(profileUser).Property("ProfilePicture").IsModified = true;
             _context.SaveChanges();
         }
 

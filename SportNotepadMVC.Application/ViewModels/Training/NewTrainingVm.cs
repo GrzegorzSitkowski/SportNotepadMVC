@@ -12,7 +12,7 @@ namespace SportNotepadMVC.Application.ViewModels.Training
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
-        public float Distance { get; set; }
+        public string Distance { get; set; }
         public string Result { get; set; }
         public string AveragePace { get; set; }
         public string Localization { get; set; }

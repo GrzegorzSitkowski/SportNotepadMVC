@@ -11,6 +11,7 @@ namespace SportNotepadMVC.Application.Interfaces
     {
         NewProfileUserVm ProfileUserForEdit();
         void EditProfileUser(NewProfileUserVm model);
+        //string UploadFile(NewProfileUserVm model);
         ProfileUserDisplayVm DisplayProfileUser();
     }
 }

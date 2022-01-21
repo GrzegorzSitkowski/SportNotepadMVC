@@ -21,4 +21,8 @@
     <ProjectReference Include="..\SportNotepadMVC.Infrastructure\SportNotepadMVC.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Pictures\" />
+  </ItemGroup>
+
 </Project>

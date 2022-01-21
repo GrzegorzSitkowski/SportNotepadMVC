@@ -16,7 +16,7 @@ namespace SportNotepadMVC.Application.ViewModels.Competition
         public string Name { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
-        public float Distance { get; set; }
+        public string Distance { get; set; }
         public DateTime Date { get; set; }
         public string Comment { get; set; }
 

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using SportNotepadMVC.Application.Mapping;
 using System;
 using System.Collections.Generic;
@@ -19,10 +20,12 @@ namespace SportNotepadMVC.Application.ViewModels.ProfileUser
         public string PbHalfMarathon { get; set; }
         public string PbMarathon { get; set; }
         public int CountCompetitions { get; set; }
+        public IFormFile ProfilePicture { get; set; }
 
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<Domain.Model.ProfileUser, ProfileUserDisplayVm>();
+            profile.CreateMap<Domain.Model.ProfileUser, ProfileUserDisplayVm>()
+                .ForMember(a => a.ProfilePicture, a => a.Ignore());
         }
     }
 }

@@ -1,15 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "o0tbnDXNkLSs6EYwSK4LM1gg330pH8LkneSd7mTnYN8C234ApaAdZpsyBo7xDhmTk8LhQsJ8tEmpGfOLfX9OMw==",
+  "dgSpecHash": "q3zBNSYR85qW5TeWQZzdA+krSG4UfmJNZbBrDttxWiuvz5+uQcW0Zsgk5ylS+gvX0AQuRN5lJHZS91/NtCnbVw==",
   "success": true,
   "projectFilePath": "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Application\\SportNotepadMVC.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sitko\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.13\\microsoft.aspnetcore.http.features.5.0.13.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
-    "C:\\Users\\sitko\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
+    "C:\\Users\\sitko\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\sitko\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
   ],
   "logs": []

@@ -15,7 +15,7 @@ namespace SportNotepadMVC.Application.ViewModels.Competition
         public string Result { get; set; }
         public string Name { get; set; }
         public string City { get; set; }
-        public float Distance { get; set; }
+        public string Distance { get; set; }
         public DateTime Date { get; set; }
 
         public void Mapping(Profile profile)
