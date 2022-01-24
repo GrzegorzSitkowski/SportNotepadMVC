@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,5 +13,7 @@ namespace SportNotepadMVC.Domain.Model
         public string Title { get; set; }
         public string Name { get; set; }
         public string Path { get; set; }
+
+        public List<IFormFile> filePhoto { get; set; }
     }
 }

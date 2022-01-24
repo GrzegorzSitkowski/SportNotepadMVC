@@ -34,6 +34,9 @@
             "projectReferences": {
               "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Domain\\SportNotepadMVC.Domain.csproj": {
                 "projectPath": "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Domain\\SportNotepadMVC.Domain.csproj"
+              },
+              "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Infrastructure\\SportNotepadMVC.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Infrastructure\\SportNotepadMVC.Infrastructure.csproj"
               }
             }
           }
@@ -119,6 +122,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

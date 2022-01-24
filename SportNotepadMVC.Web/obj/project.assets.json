@@ -2235,7 +2235,8 @@
           "AutoMapper": "10.1.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "Microsoft.AspNetCore.Http.Features": "5.0.13",
-          "SportNotepadMVC.Domain": "1.0.0"
+          "SportNotepadMVC.Domain": "1.0.0",
+          "SportNotepadMVC.Infrastructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/SportNotepadMVC.Application.dll": {}
@@ -2247,6 +2248,9 @@
       "SportNotepadMVC.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "5.0.13"
+        },
         "compile": {
           "bin/placeholder/SportNotepadMVC.Domain.dll": {}
         },
