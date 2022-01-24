@@ -12,29 +12,45 @@ namespace SportNotepadMVC.Infrastructure.Repositories
     {
         private readonly Context _context;
 
+        public PhotoGalleryRepository(Context context)
+        {
+            _context = context;
+        }
+
         public int AddPhoto(PhotoGallery photoGallery)
         {
-            throw new NotImplementedException();
+            _context.PhotoGalleries.Add(photoGallery);
+            _context.SaveChanges();
+            return photoGallery.Id;
         }
 
         public void DeletePhoto(int id)
         {
-            throw new NotImplementedException();
+            var photoGallery = _context.PhotoGalleries.Find(id);
+            if(photoGallery != null)
+            {
+                _context.PhotoGalleries.Remove(photoGallery);
+                _context.SaveChanges();
+            }
         }
 
-        public void EditPhoto(int id)
+        public void EditPhoto(PhotoGallery photoGallery)
         {
-            throw new NotImplementedException();
+            _context.Attach(photoGallery);
+            _context.Entry(photoGallery).Property("Title").IsModified = true;
+            _context.Entry(photoGallery).Property("Name").IsModified = true;
+            _context.Entry(photoGallery).Property("Path").IsModified = true;
+            _context.SaveChanges();
         }
 
         public IQueryable<PhotoGallery> GetAllPhotos()
         {
-            throw new NotImplementedException();
+            return _context.PhotoGalleries.Where(p => true);
         }
 
         public PhotoGallery GetPhotoById(int idPhoto)
         {
-            throw new NotImplementedException();
+            return _context.PhotoGalleries.FirstOrDefault(p => p.Id == idPhoto);
         }
     }
 }
