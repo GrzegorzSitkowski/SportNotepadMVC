@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SportNotepadMVC.Domain\SportNotepadMVC.Domain.csproj" />
+    <ProjectReference Include="..\SportNotepadMVC.Infrastructure\SportNotepadMVC.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -10,11 +10,12 @@ namespace SportNotepadMVC.Application.Interfaces
 {
     public interface IPhotoGalleryService
     {
-        int AddPhoto(PhotoGallery photoGallery);
+        int AddPhoto(PhotoGalleryVm photoGallery);
         void DeletePhoto(int id);
-        void EditPhoto(PhotoGallery model);
-        PhotoGallery PohtoForEdit(int id);
+        void EditPhoto(PhotoGalleryVm model);
+        PhotoGalleryVm PhotoForEdit(int id);
         PhotoGallery GetPhotoById(int idPhoto);
         ListPhotoGalleryForListVm GetAllPhotos();
+        string UploadPhoto(PhotoGalleryVm model);
     }
 }
