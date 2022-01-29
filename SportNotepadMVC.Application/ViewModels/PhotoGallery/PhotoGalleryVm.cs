@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using SportNotepadMVC.Application.Mapping;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace SportNotepadMVC.Application.ViewModels.PhotoGallery
         public int Id { get; set; }
         public string Title { get; set; }
         public string Name { get; set; }
-        public string Path { get; set; }
+        public IFormFile Path { get; set; }
 
         public void Mapping(Profile profile)
         {

@@ -13,7 +13,5 @@ namespace SportNotepadMVC.Domain.Model
         public string Title { get; set; }
         public string Name { get; set; }
         public string Path { get; set; }
-
-        public List<IFormFile> filePhoto { get; set; }
     }
 }

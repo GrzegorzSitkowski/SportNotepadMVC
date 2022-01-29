@@ -11,7 +11,7 @@ namespace SportNotepadMVC.Domain.Interfaces
     {
         int AddPhoto(PhotoGallery photoGallery);
         void DeletePhoto(int id);
-        void EditPhoto(PhotoGallery photoGallery;
+        void EditPhoto(PhotoGallery photoGallery);
         PhotoGallery GetPhotoById(int idPhoto);
         IQueryable<PhotoGallery> GetAllPhotos();
     }

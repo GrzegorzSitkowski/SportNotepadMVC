@@ -1,5 +1,5 @@
 ﻿using SportNotepadMVC.Application.ViewModels.PhotoGallery;
-using SportNotepadMVC.Infrastructure.Migrations;
+using SportNotepadMVC.Domain.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;

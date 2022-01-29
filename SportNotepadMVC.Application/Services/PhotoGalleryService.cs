@@ -29,6 +29,7 @@ namespace SportNotepadMVC.Application.Services
             var _photoGallery = _mapper.Map<PhotoGallery>(photoGallery);
             _photoGallery.Path = fileName;
             var id = _photoGalleryRepo.AddPhoto(_photoGallery);
+
             return id;
         }
 
@@ -37,7 +38,7 @@ namespace SportNotepadMVC.Application.Services
             throw new NotImplementedException();
         }
 
-        public void EditPhoto(PhotoGallery model)
+        public void EditPhoto(PhotoGalleryVm model)
         {
             throw new NotImplementedException();
         }
@@ -63,12 +64,12 @@ namespace SportNotepadMVC.Application.Services
             if (model.Path != null)
                 {
                     string uploadDir = Path.Combine(@"C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\wwwroot\Pictures\");
-                    fileName = Guid.NewGuid().ToString() + "-" + model.Title;
+                    fileName = Guid.NewGuid().ToString() + "-" + model.Path.FileName;
                     string filePath = Path.Combine(uploadDir, fileName);
-                    //using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    //{
-                    //    model.Name.CopyTo(fileStream);
-                    //}
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        model.Path.CopyTo(fileStream);
+                    }
                 }
             return fileName;
         }

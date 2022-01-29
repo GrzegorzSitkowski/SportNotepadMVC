@@ -13,3 +13,5 @@ C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\Spo
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Application\obj\Debug\net5.0\SportNotepadMVC.Application.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Application\obj\Debug\net5.0\ref\SportNotepadMVC.Application.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Application\obj\Debug\net5.0\SportNotepadMVC.Application.pdb
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Application\bin\Debug\net5.0\SportNotepadMVC.Infrastructure.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Application\bin\Debug\net5.0\SportNotepadMVC.Infrastructure.pdb
