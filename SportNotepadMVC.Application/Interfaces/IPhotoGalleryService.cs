@@ -15,7 +15,7 @@ namespace SportNotepadMVC.Application.Interfaces
         void EditPhoto(PhotoGalleryVm model);
         PhotoGalleryVm PhotoForEdit(int id);
         PhotoGallery GetPhotoById(int idPhoto);
-        ListPhotoGalleryForListVm GetAllPhotos();
+        IQueryable GetAllPhotos();
         string UploadPhoto(PhotoGalleryVm model);
     }
 }

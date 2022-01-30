@@ -35,7 +35,7 @@ namespace SportNotepadMVC.Application.Services
 
         public void DeletePhoto(int id)
         {
-            throw new NotImplementedException();
+            _photoGalleryRepo.DeletePhoto(id);
         }
 
         public void EditPhoto(PhotoGalleryVm model)
@@ -48,9 +48,9 @@ namespace SportNotepadMVC.Application.Services
         }
 
 
-        public ListPhotoGalleryForListVm GetAllPhotos()
+        public IQueryable GetAllPhotos()
         {
-            throw new NotImplementedException();
+            return _photoGalleryRepo.GetAllPhotos();
         }
 
         public PhotoGallery GetPhotoById(int idPhoto)
