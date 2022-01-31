@@ -40,11 +40,14 @@ namespace SportNotepadMVC.Application.Services
 
         public void EditPhoto(PhotoGalleryVm model)
         {
-            throw new NotImplementedException();
+            var photoGallery = _mapper.Map<PhotoGallery>(model);
+            _photoGalleryRepo.EditPhoto(photoGallery);
         }
         public PhotoGalleryVm PhotoForEdit(int id)
         {
-            throw new NotImplementedException();
+            var photoGallery = _photoGalleryRepo.GetPhotoById(id);
+            var photoGalleryVm = _mapper.Map<PhotoGalleryVm>(photoGallery);
+            return photoGalleryVm;
         }
 
 
@@ -55,7 +58,8 @@ namespace SportNotepadMVC.Application.Services
 
         public PhotoGallery GetPhotoById(int idPhoto)
         {
-            throw new NotImplementedException();
+           var id =  _photoGalleryRepo.GetPhotoById(idPhoto);
+            return id;
         }     
 
         public string UploadPhoto(PhotoGalleryVm model)

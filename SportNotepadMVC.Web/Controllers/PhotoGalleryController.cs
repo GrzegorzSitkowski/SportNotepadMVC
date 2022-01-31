@@ -40,25 +40,19 @@ namespace SportNotepadMVC.Web.Controllers
             return RedirectToAction("Index");
         }
 
-        
+        [HttpGet]
         public ActionResult Edit(int id)
         {
-            return View();
+            var photoGallery = _photoGalleryService.PhotoForEdit(id);
+            return View(photoGallery);
         }
 
         
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(PhotoGalleryVm model)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            _photoGalleryService.EditPhoto(model);
+            return RedirectToAction("Index");
         }
 
      

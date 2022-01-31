@@ -39,7 +39,6 @@ namespace SportNotepadMVC.Infrastructure.Repositories
             _context.Attach(photoGallery);
             _context.Entry(photoGallery).Property("Title").IsModified = true;
             _context.Entry(photoGallery).Property("Name").IsModified = true;
-            _context.Entry(photoGallery).Property("Path").IsModified = true;
             _context.SaveChanges();
         }
 
