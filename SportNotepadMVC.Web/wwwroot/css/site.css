@@ -19,11 +19,11 @@ a {
     color: #0366d6;
 }
 
-a img:hover
+/*a img:hover
 {
     transform: scale(5.0);
     transition-duration: 1.5s;
-}
+} */
 
 th {
     text-align: center;

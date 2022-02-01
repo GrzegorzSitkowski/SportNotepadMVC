@@ -15,7 +15,7 @@ namespace SportNotepadMVC.Application.ViewModels.Training
         public string Distance { get; set; }
         public string Result { get; set; }
         public string AveragePace { get; set; }
-        public string Localization { get; set; }
+        public string Location { get; set; }
         public string Comment { get; set; }
 
         public void Mapping(Profile profile)
