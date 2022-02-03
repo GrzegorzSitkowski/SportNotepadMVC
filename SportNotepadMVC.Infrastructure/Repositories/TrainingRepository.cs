@@ -39,7 +39,7 @@ namespace SportNotepadMVC.Infrastructure.Repositories
             _context.Entry(training).Property("Distance").IsModified = true;
             _context.Entry(training).Property("Result").IsModified = true;
             _context.Entry(training).Property("AveragePace").IsModified = true;
-            _context.Entry(training).Property("Localization").IsModified = true;
+            _context.Entry(training).Property("Location").IsModified = true;
             _context.Entry(training).Property("Comment").IsModified = true;
             _context.SaveChanges();
         }

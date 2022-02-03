@@ -1,0 +1,28 @@
+﻿@model IEnumerable<SportNotepadMVC.Domain.Model.PhotoGallery>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Galeria</h1>
+
+<p>
+    <a asp-action="Create">Dodaj zdjęcie</a>
+</p>
+<div class="row">
+    @foreach (var item in Model)
+    {
+    <div class="col-sm-2" id="img">
+        <a>           
+            @Html.DisplayFor(modelItem => item.Title) - @Html.DisplayFor(modelItem => item.Name)
+            <img src="~/Pictures/@item.Path" class="img-fluid mb-2" asp-append-version="true" id="img" data-action="zoom"/>
+        </a>
+        @Html.ActionLink("Edytuj", "Edit", new { id = item.Id })
+        @Html.ActionLink("Usuń", "Delete", new { id = item.Id })
+    </div>
+    }
+</div>
+<script src="~/js/zooming.min.js"></script>
+<script type="text/javascript">
+    new Zooming().listen('img')
+</script>

@@ -258,6 +258,27 @@ namespace SportNotepadMVC.Infrastructure.Migrations
                     b.ToTable("Competitions");
                 });
 
+            modelBuilder.Entity("SportNotepadMVC.Domain.Model.PhotoGallery", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Path")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PhotoGalleries");
+                });
+
             modelBuilder.Entity("SportNotepadMVC.Domain.Model.ProfileUser", b =>
                 {
                     b.Property<int>("Id")

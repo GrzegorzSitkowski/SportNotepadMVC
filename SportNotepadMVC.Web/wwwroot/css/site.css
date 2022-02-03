@@ -19,6 +19,12 @@ a {
     color: #0366d6;
 }
 
+/*a img:hover
+{
+    transform: scale(5.0);
+    transition-duration: 1.5s;
+} */
+
 th {
     text-align: center;
     background-color: #109c51;
