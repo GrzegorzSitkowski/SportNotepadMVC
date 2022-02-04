@@ -15,6 +15,7 @@ namespace SportNotepadMVC.Infrastructure
         public DbSet<ProfileUser> ProfileUsers { get; set; }
         public DbSet<Training> Trainings { get; set; }
         public DbSet<PhotoGallery> PhotoGalleries { get; set; }
+        public DbSet<Goal> Goals { get; set; }
              
         public Context(DbContextOptions options) : base(options)
         {
