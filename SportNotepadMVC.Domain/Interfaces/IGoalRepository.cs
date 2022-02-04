@@ -10,7 +10,7 @@ namespace SportNotepadMVC.Domain.Interfaces
     public interface IGoalRepository
     {
         int AddGoal(Goal goal);
-        int EditGoal(Goal goal);
+        void EditGoal(Goal goal);
         void DeleteGoal(int id);
         Goal GetGoalById(int idGoal);
         IQueryable<Goal> GetAllGoals();
