@@ -9,7 +9,7 @@
 <p>
     <a asp-action="Create">Dodaj nowy</a>
 </p>
-<form asp-action="Index" asp-controller="Trainig" method="post">
+<form asp-action="Index" asp-controller="Training" method="post">
     <div class="row">
         <input type="text" asp-for="SearchString" name="SearchString" id="searchString" />
     </div>
@@ -85,7 +85,7 @@
             </tr>
         </table>
         <input type="hidden" name="pageNo" id="pageNo" />
-        <input type="hidden" name="pageSize" id="pageSize" value="10" />
+        <input type="hidden" name="pageSize" id="pageSize" value="5" />
     </div>
 </form>
 

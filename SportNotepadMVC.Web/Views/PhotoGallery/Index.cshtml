@@ -12,9 +12,10 @@
 <div class="row">
     @foreach (var item in Model)
     {
-    <div class="col-sm-2" id="img">
+    <div class="col-sm-6" id="img">
         <a>           
             @Html.DisplayFor(modelItem => item.Title) - @Html.DisplayFor(modelItem => item.Name)
+
             <img src="~/Pictures/@item.Path" class="img-fluid mb-2" asp-append-version="true" id="img" data-action="zoom"/>
         </a>
         @Html.ActionLink("Edytuj", "Edit", new { id = item.Id })
