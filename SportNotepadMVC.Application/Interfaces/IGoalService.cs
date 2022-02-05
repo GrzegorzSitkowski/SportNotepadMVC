@@ -15,7 +15,7 @@ namespace SportNotepadMVC.Application.Interfaces
         NewGoalVm GoalForEdit(int id);
         void EditGoal(NewGoalVm model);
         GoalDetailsVm GetGoalDetails(int id);
-        GoalForListVm GetAllGoal();
+        ListGoalForListVm GetAllGoal();
         Goal GetGoalById(int idGoal);
     }
 }

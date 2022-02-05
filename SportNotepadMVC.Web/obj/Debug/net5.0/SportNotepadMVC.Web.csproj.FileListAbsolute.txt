@@ -458,3 +458,4 @@ C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\Spo
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\obj\Debug\net5.0\Razor\Views\PhotoGallery\Index.cshtml.g.cs
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\obj\Debug\net5.0\Razor\Views\PhotoGallery\Edit.cshtml.g.cs
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\obj\Debug\net5.0\Razor\Views\Goal\Create.cshtml.g.cs
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\obj\Debug\net5.0\Razor\Views\Goal\Index.cshtml.g.cs

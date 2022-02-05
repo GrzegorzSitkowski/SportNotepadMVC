@@ -16,6 +16,7 @@ namespace SportNotepadMVC.Application.ViewModels.Goal
         public string Time { get; set; }
         public bool Paid { get; set; }
 
+
         public void Mapping(Profile profile)
         {
             profile.CreateMap<Domain.Model.Goal, GoalForListVm>();

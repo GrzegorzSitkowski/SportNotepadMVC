@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using SportNotepadMVC.Application.Interfaces;
 using SportNotepadMVC.Application.ViewModels.Goal;
 using SportNotepadMVC.Domain.Interfaces;
@@ -40,11 +41,15 @@ namespace SportNotepadMVC.Application.Services
             _goalRepo.EditGoal(goal);
         }
 
-        public GoalForListVm GetAllGoal()
+        public ListGoalForListVm GetAllGoal()
         {
-            var goals = _goalRepo.GetAllGoals();
-            var goalsVm = _mapper.Map<GoalForListVm>(goals);
-            return goalsVm;
+            var goals = _goalRepo.GetAllGoals().ProjectTo<GoalForListVm>(_mapper.ConfigurationProvider).ToList();
+
+            var goalsList = new ListGoalForListVm()
+            {
+                Goals = goals
+            };
+            return goalsList;
         }
 
         public Goal GetGoalById(int idGoal)

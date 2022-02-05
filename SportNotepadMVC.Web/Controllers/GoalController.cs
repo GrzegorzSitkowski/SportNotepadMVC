@@ -17,9 +17,11 @@ namespace SportNotepadMVC.Web.Controllers
         {
             _goalService = goalService;
         }
+
         public ActionResult Index()
         {
-            return View();
+            var model = _goalService.GetAllGoal();
+            return View(model);
         }
 
         public ActionResult Details(int id)

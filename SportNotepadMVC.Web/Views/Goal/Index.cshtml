@@ -1,0 +1,59 @@
+﻿@model SportNotepadMVC.Application.ViewModels.Goal.ListGoalForListVm
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Plany/Cele</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Data
+            </th>
+            <th>
+                Nazwa
+            </th>
+            <th>
+                Dystans
+            </th>
+            <th>
+                Czas
+            </th>
+            <th>
+                Opłacone?
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Goals) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Distance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Paid)
+            </td>
+            <td>
+                @Html.ActionLink("Edytuj", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Szczegóły", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Usuń", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
