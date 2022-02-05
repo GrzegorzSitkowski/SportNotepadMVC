@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SportNotepadMVC.Application.ViewModels.Goal
 {
-    class ListGoalForListVm
+    public class ListGoalForListVm
     {
+        public List<GoalForListVm> Goals { get; set; }
     }
 }
