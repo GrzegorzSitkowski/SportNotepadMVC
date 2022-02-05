@@ -18,6 +18,7 @@ namespace SportNotepadMVC.Application
             services.AddTransient<ITrainingService, TrainingService>();
             services.AddTransient<IProfileUserService, ProfileUserService>();
             services.AddTransient<IPhotoGalleryService, PhotoGalleryService>();
+            services.AddTransient<IGoalService, GoalService>();
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             return services;
         }
