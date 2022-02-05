@@ -7,7 +7,7 @@
 <h1>Plany/Cele</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Dodaj nowy</a>
 </p>
 <table class="table">
     <thead>
@@ -34,7 +34,7 @@
 @foreach (var item in Model.Goals) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Date)
+                @item.Date.ToString("dd.MM.yyyy")
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
