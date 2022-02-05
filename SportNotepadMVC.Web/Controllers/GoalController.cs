@@ -43,6 +43,8 @@ namespace SportNotepadMVC.Web.Controllers
             }
             return View(model);
         }
+
+        [HttpGet]
         public ActionResult Edit(int id)
         {
             return View();
@@ -50,7 +52,7 @@ namespace SportNotepadMVC.Web.Controllers
         [HttpPost]
         public ActionResult Edit(int id, IFormCollection collection)
         {
-
+            return RedirectToAction("Index");
         }
 
         public ActionResult Delete(int id)
@@ -61,7 +63,7 @@ namespace SportNotepadMVC.Web.Controllers
         [HttpPost]
         public ActionResult Delete(int id, IFormCollection collection)
         {
-
+            return RedirectToAction("Index");
         }
     }
 }
