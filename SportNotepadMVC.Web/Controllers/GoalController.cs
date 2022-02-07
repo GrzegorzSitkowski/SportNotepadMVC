@@ -26,7 +26,8 @@ namespace SportNotepadMVC.Web.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            var goal = _goalService.GetGoalDetails(id);
+            return View(goal);
         }
 
         [HttpGet]
@@ -62,12 +63,6 @@ namespace SportNotepadMVC.Web.Controllers
         public ActionResult Delete(int id)
         {
             return View();
-        }
-
-        [HttpPost]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            return RedirectToAction("Index");
         }
     }
 }

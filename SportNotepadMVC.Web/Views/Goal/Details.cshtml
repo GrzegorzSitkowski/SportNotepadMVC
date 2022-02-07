@@ -1,0 +1,59 @@
+﻿@model SportNotepadMVC.Application.ViewModels.Goal.GoalDetailsVm
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Szczegóły</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Data
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt class = "col-sm-2">
+            Nazwa
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            Dystans
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Distance)
+        </dd>
+        <dt class = "col-sm-2">
+            Czas
+        </dt>
+        <dd class = "col-sm-10">
+            @Model.Date.ToString("dd.MM.yyyy")
+        </dd>
+        <dt class = "col-sm-2">
+            Miejsce
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+        <dt class = "col-sm-2">
+            Czy opłacone
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Paid)
+        </dd>
+        <dt class = "col-sm-2">
+            Komentarz
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edytuj", "Edit", new {  id = Model.Id  }) |
+    <a asp-action="Index">Wróć do listy</a>
+</div>
