@@ -62,7 +62,8 @@ namespace SportNotepadMVC.Web.Controllers
 
         public ActionResult Delete(int id)
         {
-            return View();
+            _goalService.DeleteGoal(id);
+            return RedirectToAction("Index");
         }
     }
 }
