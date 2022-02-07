@@ -49,11 +49,13 @@ namespace SportNotepadMVC.Web.Controllers
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            return View();
+            var goal = _goalService.GoalForEdit(id);
+            return View(goal);
         }
         [HttpPost]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(NewGoalVm model)
         {
+            _goalService.EditGoal(model);
             return RedirectToAction("Index");
         }
 

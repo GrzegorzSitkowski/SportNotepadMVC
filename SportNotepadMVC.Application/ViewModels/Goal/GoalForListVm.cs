@@ -10,6 +10,7 @@ namespace SportNotepadMVC.Application.ViewModels.Goal
 {
     public class GoalForListVm : IMapFrom<Domain.Model.Goal>
     {
+        public int Id { get; set; }
         public DateTime Date { get; set; }
         public string Name { get; set; }
         public string Distance { get; set; }
