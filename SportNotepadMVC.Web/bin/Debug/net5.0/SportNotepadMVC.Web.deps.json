@@ -34,6 +34,7 @@
       "SportNotepadMVC.Web/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.ApiAuthorization.IdentityServer": "5.0.4",
+          "Microsoft.AspNetCore.Authentication.Google": "5.0.13",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "5.0.4",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.12",
           "Microsoft.AspNetCore.Identity.UI": "5.0.12",
@@ -475,6 +476,17 @@
         },
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.ApiAuthorization.IdentityServer.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Google/5.0.13": {
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "assemblyVersion": "5.0.13.0",
+            "fileVersion": "5.0.1321.57202"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Authentication.Google.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.4": {
@@ -3939,6 +3951,13 @@
       "sha512": "sha512-/alpW/32thjY+xLKMi8ZdYmKPlM9dNYXCtCXvzD8WucZLT4/KudbIeoW++0fQGAjvJjckUER5s4zIdTT7uYf2Q==",
       "path": "microsoft.aspnetcore.apiauthorization.identityserver/5.0.4",
       "hashPath": "microsoft.aspnetcore.apiauthorization.identityserver.5.0.4.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.Google/5.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rzFsEB2G4wiLFfOczaIfuUTjU8vTm/TXnmilTM2jOY20KG202lf4KCqC8C+PuOD5Zq3C+/rRDLwo9UC1+2n4ig==",
+      "path": "microsoft.aspnetcore.authentication.google/5.0.13",
+      "hashPath": "microsoft.aspnetcore.authentication.google.5.0.13.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.4": {
       "type": "package",
