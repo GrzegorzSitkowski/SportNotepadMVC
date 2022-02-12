@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q56QgGLF3OBMLeskZzmfTw1x/oOCopinqIrsIgvRFaesK0amhJxHEzT7qfSiKZ6Ly9ONitSY7fAmp78ATKT60g==",
+  "dgSpecHash": "X9ozLspDN1pOty46MSZktRfR14VZ9IzsQR51dUK+fIiAP3IDcOJ072Df31XMs3AMEQz/z4r2Tu1X/rJZbBqxyw==",
   "success": true,
   "projectFilePath": "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Web\\SportNotepadMVC.Web.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\sitko\\.nuget\\packages\\identityserver4.entityframework.storage\\4.1.0\\identityserver4.entityframework.storage.4.1.0.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\identityserver4.storage\\4.1.0\\identityserver4.storage.4.1.0.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.apiauthorization.identityserver\\5.0.4\\microsoft.aspnetcore.apiauthorization.identityserver.5.0.4.nupkg.sha512",
+    "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\5.0.14\\microsoft.aspnetcore.authentication.facebook.5.0.14.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\5.0.13\\microsoft.aspnetcore.authentication.google.5.0.13.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.4\\microsoft.aspnetcore.authentication.jwtbearer.5.0.4.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.1.0\\microsoft.aspnetcore.authentication.openidconnect.3.1.0.nupkg.sha512",
