@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X9ozLspDN1pOty46MSZktRfR14VZ9IzsQR51dUK+fIiAP3IDcOJ072Df31XMs3AMEQz/z4r2Tu1X/rJZbBqxyw==",
+  "dgSpecHash": "GXwv9/a8wRnmRs0MwZdIXRBOFrL3xz21RIHLJ04y8JAH9NWdWVKzAsMVcusVGJUmz+vHlxVxeDy6HWtwpfdPlA==",
   "success": true,
   "projectFilePath": "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Web\\SportNotepadMVC.Web.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,9 @@
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\5.0.14\\microsoft.aspnetcore.authentication.facebook.5.0.14.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\5.0.13\\microsoft.aspnetcore.authentication.google.5.0.13.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.4\\microsoft.aspnetcore.authentication.jwtbearer.5.0.4.nupkg.sha512",
+    "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.authentication.microsoftaccount\\5.0.14\\microsoft.aspnetcore.authentication.microsoftaccount.5.0.14.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.1.0\\microsoft.aspnetcore.authentication.openidconnect.3.1.0.nupkg.sha512",
+    "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.14\\microsoft.aspnetcore.authorization.5.0.14.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.12\\microsoft.aspnetcore.cryptography.keyderivation.5.0.12.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\5.0.4\\microsoft.aspnetcore.diagnostics.entityframeworkcore.5.0.4.nupkg.sha512",
@@ -25,6 +27,7 @@
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.13\\microsoft.aspnetcore.http.features.5.0.13.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.12\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.12.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\5.0.12\\microsoft.aspnetcore.identity.ui.5.0.12.nupkg.sha512",
+    "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.metadata\\5.0.14\\microsoft.aspnetcore.metadata.5.0.14.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.13\\microsoft.aspnetcore.mvc.razor.extensions.5.0.13.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.13\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.13.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

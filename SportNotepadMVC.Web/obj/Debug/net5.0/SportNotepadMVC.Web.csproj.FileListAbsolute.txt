@@ -14,7 +14,6 @@ C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\Spo
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Authentication.Core.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Authentication.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
-C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Authorization.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Authorization.Policy.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Components.Authorization.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Components.dll
@@ -46,7 +45,6 @@ C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\Spo
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Identity.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Localization.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Localization.Routing.dll
-C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Metadata.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Mvc.Core.dll
@@ -477,3 +475,6 @@ C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\Spo
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\sitko\OneDrive\Pulpit\Programowanie\SportNotepadMVC\SportNotepadMVC\SportNotepadMVC.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll
