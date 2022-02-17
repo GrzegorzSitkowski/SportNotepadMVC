@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SportNotepadMVC.Application.Interfaces;
 using SportNotepadMVC.Application.ViewModels.Goal;
+using SportNotepadMVC.Web.Filtres;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +20,7 @@ namespace SportNotepadMVC.Web.Controllers
             _goalService = goalService;
         }
 
+        [CheckPermission("Read")]
         public ActionResult Index()
         {
             var model = _goalService.GetAllGoal();
