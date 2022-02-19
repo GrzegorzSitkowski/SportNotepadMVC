@@ -35,6 +35,7 @@ namespace SportNotepadMVC.Web
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<Context>();
 
             services.AddApplication();

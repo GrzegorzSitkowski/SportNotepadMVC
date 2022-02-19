@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SportNotepadMVC.Application.Interfaces;
 using SportNotepadMVC.Application.ViewModels.PhotoGallery;
@@ -20,6 +21,8 @@ namespace SportNotepadMVC.Web.Controllers
             _photoGalleryService = photoGalleryService;
             _context = context;
         }
+
+        [Authorize(Roles = "Admin, User")]
         public ActionResult Index()
         {
             var photos = _photoGalleryService.GetAllPhotos();
