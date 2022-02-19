@@ -6,12 +6,10 @@
 
 <h1>Galeria</h1>
 
-@if(User.IsInRole("Admin"))
-{
+@* if(User.IsInRole("Admin")) *@
 <p>
     <a asp-action="Create">Dodaj zdjęcie</a>
 </p>
-}
 <div class="row">
     @foreach (var item in Model)
     {
