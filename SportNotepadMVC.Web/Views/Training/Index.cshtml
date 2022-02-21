@@ -11,10 +11,6 @@
 </p>
 <form asp-action="Index" asp-controller="Training" method="post">
     <div class="row">
-        <input type="text" asp-for="SearchString" name="SearchString" id="searchString" />
-    </div>
-    <br />
-    <div class="row">
         <table class="table">
             <thead>
                 <tr>
@@ -66,7 +62,8 @@
             </tbody>
         </table>
     </div>
-    <div class="row">
+    </form>
+    @*<div class="row">
         <table>
             <tr>
                 @for (int i = 1; i <= Math.Ceiling(Model.Count / (double)Model.PageSize); i++)
@@ -98,4 +95,4 @@
             document.forms[0].submit();
         }
     </script>
-}
+} *@

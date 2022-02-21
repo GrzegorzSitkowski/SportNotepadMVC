@@ -45,20 +45,14 @@ namespace SportNotepadMVC.Application.Services
             return trainingVm;
         }
 
-        public ListTrainingForListVm GetAllTrainigs(int pageSize, int pageNo, string searchString)
+        public ListTrainingForListVm GetAllTrainigs()
         {
-            var trainings = _trainingRepo.GetAllTrainings().Where(p => p.Id.ToString().StartsWith(searchString))
+            var trainings = _trainingRepo.GetAllTrainings()
                 .ProjectTo<TrainingForListVm>(_mapper.ConfigurationProvider).ToList();
-
-            var trainigToShow = trainings.Skip(pageSize * (pageNo - 1)).Take(pageSize).ToList();
 
             var trainingList = new ListTrainingForListVm()
             {
-                PageSize = pageSize,
-                CurrentPage = pageNo,
-                SearchString = searchString,
-                Trainings = trainigToShow,
-                Count = trainings.Count
+                Trainings = trainings
             };
             return trainingList;
         }

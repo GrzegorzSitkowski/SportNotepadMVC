@@ -21,26 +21,9 @@ namespace SportNotepadMVC.Web.Controllers
             _traningService = trainingService;
         }
 
-        [HttpGet]
         public ActionResult Index()
         {
-            var model = _traningService.GetAllTrainigs(5,1,"");
-            return View(model);
-        }
-
-        [HttpPost]
-        public ActionResult Index(int pageSize, int? pageNo, string searchString)
-        {
-            if(!pageNo.HasValue)
-            {
-                pageNo = 1;
-            }
-            if(searchString is null)
-            {
-                searchString = String.Empty;
-            }
-
-            var model = _traningService.GetAllTrainigs(pageSize, pageNo.Value, searchString);
+            var model = _traningService.GetAllTrainigs();
             return View(model);
         }
 

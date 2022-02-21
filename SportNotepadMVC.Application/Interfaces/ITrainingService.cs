@@ -16,6 +16,6 @@ namespace SportNotepadMVC.Application.Interfaces
         TrainingDetailsVm GetTrainingDetails(int id);
         NewTrainingVm TrainingForEdit(int id);      
         Training GetTrainingById(int trainingId);
-        ListTrainingForListVm GetAllTrainigs(int pageNo, int pageSize, string searchString);
+        ListTrainingForListVm GetAllTrainigs();
     }
 }

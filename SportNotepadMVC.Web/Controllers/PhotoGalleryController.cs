@@ -29,7 +29,7 @@ namespace SportNotepadMVC.Web.Controllers
             return View(photos);
         }
 
-        [Authorize(Policy = "CanAddNewPhoto")]
+        //[Authorize(Policy = "CanAddNewPhoto")]
         [HttpGet]
         public ActionResult Create()
         {
