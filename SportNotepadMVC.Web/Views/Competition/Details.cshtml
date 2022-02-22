@@ -66,6 +66,6 @@
     </dl>
 </div>
 <div>
-    @Html.ActionLink("Edytuj", "Edit", new {  id = Model.Id  }) |
-    <a asp-action="Index">Wróć do listy</a>
+    @Html.ActionLink("Edytuj", "Edit", new {  id = Model.Id  }, new {@class = "btn btn-warning" }) 
+    <a class="btn btn-success" asp-action="Index">Wróć do listy</a>
 </div>

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "GXwv9/a8wRnmRs0MwZdIXRBOFrL3xz21RIHLJ04y8JAH9NWdWVKzAsMVcusVGJUmz+vHlxVxeDy6HWtwpfdPlA==",
+  "dgSpecHash": "0lnbeA7EkMqW2xDzwKr+x8mpDj9tln22T3QwIS1qlGvvbcvDIWGKhL9287TKCeDIdHgg76eITlsULwGBDXclOw==",
   "success": true,
   "projectFilePath": "C:\\Users\\sitko\\OneDrive\\Pulpit\\Programowanie\\SportNotepadMVC\\SportNotepadMVC\\SportNotepadMVC.Web\\SportNotepadMVC.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sitko\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\sitko\\.nuget\\packages\\bootstrap\\5.1.3\\bootstrap.5.1.3.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",
     "C:\\Users\\sitko\\.nuget\\packages\\identityserver4\\4.1.0\\identityserver4.4.1.0.nupkg.sha512",
