@@ -6,6 +6,7 @@ using SportNotepadMVC.Domain.Interfaces;
 using SportNotepadMVC.Domain.Model;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -61,7 +62,6 @@ namespace SportNotepadMVC.Application.Services
                 Competitions = competitionToShow,
                 Count = competitions.Count
             };
-
             return competitionList;
         }
 
@@ -70,6 +70,22 @@ namespace SportNotepadMVC.Application.Services
             var competition = _competitionRepo.GetCompetitionById(id);
             var competitionVm = _mapper.Map<CompetitionDetailsVm>(competition);
             return competitionVm;
+        }
+
+        public void DownloadList()
+        {
+            string path = @"C:\Users\sitko\OneDrive\Pulpit\CompetitionList.txt";
+            using StreamWriter sw = File.AppendText(path);
+
+            var competition = _competitionRepo.GetCompetitionById(1);
+            var competitionToFile = _competitionRepo.GetAllCompetitions();
+            foreach(var item in competitionToFile)
+            {
+                sw.WriteLine(item.Position + " | " + item.Result + " | " + item.Name + " | " + item.Distance + " | " +
+                    item.Date);
+            }
+            //sw.WriteLine(competition.Position + " | " + competition.Result + " | " + competition.Name + " | " + competition.Distance + " | " +
+             //       competition.Date);        
         }
     }
 }
