@@ -84,5 +84,11 @@ namespace SportNotepadMVC.Web.Controllers
             _competitionService.DeleteCompetition(id);
             return RedirectToAction("Index");
         }
+
+        public ActionResult DownloadList()
+        {
+            _competitionService.DownloadList();
+            return RedirectToAction("Index");
+        }
     }
 }
