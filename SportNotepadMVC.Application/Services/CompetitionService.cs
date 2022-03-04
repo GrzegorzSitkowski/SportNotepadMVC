@@ -84,8 +84,6 @@ namespace SportNotepadMVC.Application.Services
                 sw.WriteLine(item.Position + " | " + item.Result + " | " + item.Name + " | " + item.Distance + " | " +
                     item.Date);
             }
-            //sw.WriteLine(competition.Position + " | " + competition.Result + " | " + competition.Name + " | " + competition.Distance + " | " +
-             //       competition.Date);        
         }
     }
 }
