@@ -74,8 +74,10 @@ namespace SportNotepadMVC.Application.Services
 
         public void DownloadList()
         {
-            string path = @"C:\Users\sitko\OneDrive\Pulpit\CompetitionList.txt";
-            using StreamWriter sw = File.AppendText(path);
+            
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string fileName = path + "\\CompetitionList.txt";
+            using StreamWriter sw = File.AppendText(fileName);
 
             var competition = _competitionRepo.GetCompetitionById(1);
             var competitionToFile = _competitionRepo.GetAllCompetitions();
