@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportNotepadMVC.Web", "SportNotepadMVC.Web\SportNotepadMVC.Web.csproj", "{1B61E7C4-C0E4-4576-A7CB-036EF4B4612E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportNotepadMVC.Web", "SportNotepadMVC.Web\SportNotepadMVC.Web.csproj", "{1B61E7C4-C0E4-4576-A7CB-036EF4B4612E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportNotepadMVC.Application", "SportNotepadMVC.Application\SportNotepadMVC.Application.csproj", "{001D38EE-03F3-44AA-9577-74BA678022BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportNotepadMVC.Application", "SportNotepadMVC.Application\SportNotepadMVC.Application.csproj", "{001D38EE-03F3-44AA-9577-74BA678022BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportNotepadMVC.Infrastructure", "SportNotepadMVC.Infrastructure\SportNotepadMVC.Infrastructure.csproj", "{1CFF41D6-EC58-4040-B1CA-47CD67C3E49A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportNotepadMVC.Infrastructure", "SportNotepadMVC.Infrastructure\SportNotepadMVC.Infrastructure.csproj", "{1CFF41D6-EC58-4040-B1CA-47CD67C3E49A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportNotepadMVC.Domain", "SportNotepadMVC.Domain\SportNotepadMVC.Domain.csproj", "{B3CACD47-E10D-47EF-84E1-8C9197AC59D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportNotepadMVC.Domain", "SportNotepadMVC.Domain\SportNotepadMVC.Domain.csproj", "{B3CACD47-E10D-47EF-84E1-8C9197AC59D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportNotepadMVC.Tests", "SportNotepadMVC.Tests\SportNotepadMVC.Tests.csproj", "{D4799FB4-099E-424D-9C71-DCD297840C35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B3CACD47-E10D-47EF-84E1-8C9197AC59D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3CACD47-E10D-47EF-84E1-8C9197AC59D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3CACD47-E10D-47EF-84E1-8C9197AC59D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4799FB4-099E-424D-9C71-DCD297840C35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4799FB4-099E-424D-9C71-DCD297840C35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4799FB4-099E-424D-9C71-DCD297840C35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4799FB4-099E-424D-9C71-DCD297840C35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
