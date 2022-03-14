@@ -1,4 +1,5 @@
 ﻿using SportNotepadMVC.Application.ViewModels.Competition;
+using SportNotepadMVC.Domain.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace SportNotepadMVC.Application.Interfaces
         CompetitionDetailsVm GetCompetitionDetails(int id);
         NewCompetitionVm CompetitionForEdit(int id);
         ListCompetitionForListVm GetAllCompetitions(int pageNo, int pageSize, string searchString);
+        Competition GetCompetitionById(int id);
         void DownloadList();
     }
 }

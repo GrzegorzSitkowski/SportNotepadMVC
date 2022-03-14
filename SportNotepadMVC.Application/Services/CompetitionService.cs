@@ -87,5 +87,10 @@ namespace SportNotepadMVC.Application.Services
                     item.Date);
             }
         }
+
+        public Competition GetCompetitionById(int id)
+        {
+            return _competitionRepo.GetCompetitionById(id);
+        }
     }
 }
