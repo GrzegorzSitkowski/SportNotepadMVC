@@ -15,7 +15,7 @@ namespace SportNotepadMVC.Application.Interfaces
         void DeleteCompetition(int id);
         CompetitionDetailsVm GetCompetitionDetails(int id);
         NewCompetitionVm CompetitionForEdit(int id);
-        ListCompetitionForListVm GetAllCompetitions(int pageNo, int pageSize, string searchString);
+        ListCompetitionForListVm GetAllCompetitions();
         Competition GetCompetitionById(int id);
         void DownloadList();
     }

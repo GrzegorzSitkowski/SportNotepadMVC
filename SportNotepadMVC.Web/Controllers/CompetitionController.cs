@@ -20,26 +20,9 @@ namespace SportNotepadMVC.Web.Controllers
             _competitionService = competitionService;
             _context = context;
         }
-        [HttpGet]
         public IActionResult Index()
         {
-            var model = _competitionService.GetAllCompetitions(5, 1, "");
-            return View(model);
-        }
-
-        [HttpPost]
-        public IActionResult Index(int pageSize, int? pageNo, string searchString)
-        {
-            if(!pageNo.HasValue)
-            {
-                pageNo = 1;
-            }
-            if(searchString is null)
-            {
-                searchString = String.Empty;
-            }
-
-            var model = _competitionService.GetAllCompetitions(pageSize, pageNo.Value, searchString);
+            var model = _competitionService.GetAllCompetitions();
             return View(model);
         }
 
