@@ -11,7 +11,7 @@
 </p>
 <form asp-action="Index" asp-controller="Training" method="post">
     <div class="row">
-        <table class="table">
+        <table class="table table-striped table-bordered" width="100%" id="table_id">
             <thead>
                 <tr>
                     <th>
@@ -54,8 +54,8 @@
                             @Html.DisplayFor(modelItem => item.AveragePace)
                         </td>
                         <td>
-                            @Html.ActionLink("Edytuj", "Edit", new { id = item.Id }, new {@class = "btn btn-warning" }) 
-                            @Html.ActionLink("Szczegóły", "Details", new { id = item.Id }, new { @class = "btn btn-info" }) 
+                            @Html.ActionLink("Edytuj", "Edit", new { id = item.Id }, new { @class = "btn btn-warning" })
+                            @Html.ActionLink("Szczegóły", "Details", new { id = item.Id }, new { @class = "btn btn-info" })
                             @Html.ActionLink("Usuń", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
                         </td>
                     </tr>
@@ -63,37 +63,33 @@
             </tbody>
         </table>
     </div>
-    </form>
-    @*<div class="row">
-        <table>
-            <tr>
-                @for (int i = 1; i <= Math.Ceiling(Model.Count / (double)Model.PageSize); i++)
-                {
-                    <td>
-                        @if (i != Model.CurrentPage)
-                        {
-                            <a id="page" href="javascript:PagerClick(@i)">@i</a>
-                        }
-                        else
-                        {
-                            <span>@i</span>
-                        }
-                    </td>
-                }
-            </tr>
-        </table>
-        <input type="hidden" name="pageNo" id="pageNo" />
-        <input type="hidden" name="pageSize" id="pageSize" value="5" />
-    </div>
 </form>
 
 @section Scripts
 {
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+
+
     <script type="text/javascript">
-        function PagerClick(index)
-        {
-            document.getElementById("pageNo").value = index;
-            document.forms[0].submit();
-        }
+        $(document).ready(function () {
+            $('#table_id').DataTable({
+                "language": {
+                    "lengthMenu": "Pokaż _MENU_ treningów na stronie",
+                    "zeroRecords": "Brak pasujących treningów",
+                    "info": "Strona _PAGE_ z _PAGES_",
+                    "infoEmpty": "Brak treningów w bazie",
+                    "infoFiltered": "(przeszukano z _MAX_ treningów)",
+                    "search": "Wyszukaj: ",
+                    "paginate": {
+                        "first": "Pierwsza",
+                        "last": "Ostatnia",
+                        "next": "Następna",
+                        "previous": "Poprzednia"
+                    }
+                }
+            });
+        });
     </script>
-} *@
+}
