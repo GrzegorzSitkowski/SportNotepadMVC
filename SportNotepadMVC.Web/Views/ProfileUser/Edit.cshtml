@@ -7,65 +7,68 @@
 <h1>Edytuj</h1>
 
 <hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="divRadius">
+    <div class="col-md-8">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <input type="hidden" asp-for="Id" class="form-control" />
             </div>
-            <div class="form-group">
-                <label asp-for="FullName" class="control-label">Imię i nazwisko</label>
-                <input asp-for="FullName" class="form-control" />
-                <span asp-validation-for="FullName" class="text-danger"></span>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="FullName" class="control-label">Imię i nazwisko</label>
+                    <input asp-for="FullName" class="form-control" />
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="Age" class="control-label">Wiek</label>
+                    <input asp-for="Age" class="form-control" />
+                    <span asp-validation-for="Age" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Age" class="control-label">Wiek</label>
-                <input asp-for="Age" class="form-control" />
-                <span asp-validation-for="Age" class="text-danger"></span>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Weight" class="control-label">Waga</label>
+                    <input asp-for="Weight" class="form-control" />
+                    <span asp-validation-for="Weight" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="Pb5k" class="control-label">Rekord na 5km</label>
+                    <input asp-for="Pb5k" class="form-control" />
+                    <span asp-validation-for="Pb5k" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Weight" class="control-label">Waga</label>
-                <input asp-for="Weight" class="form-control" />
-                <span asp-validation-for="Weight" class="text-danger"></span>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Pb10k" class="control-label">Rekord na 10km</label>
+                    <input asp-for="Pb10k" class="form-control" />
+                    <span asp-validation-for="Pb10k" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="PbHalfMarathon" class="control-label">Rekord w półmaratonie</label>
+                    <input asp-for="PbHalfMarathon" class="form-control" />
+                    <span asp-validation-for="PbHalfMarathon" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Pb5k" class="control-label">Rekord na 5km</label>
-                <input asp-for="Pb5k" class="form-control" />
-                <span asp-validation-for="Pb5k" class="text-danger"></span>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="PbMarathon" class="control-label">Rekord w maratonie</label>
+                    <input asp-for="PbMarathon" class="form-control" />
+                    <span asp-validation-for="PbMarathon" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="CountCompetitions" class="control-label">Liczba zawodów</label>
+                    <input asp-for="CountCompetitions" class="form-control" />
+                    <span asp-validation-for="CountCompetitions" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Pb10k" class="control-label">Rekord na 10km</label>
-                <input asp-for="Pb10k" class="form-control" />
-                <span asp-validation-for="Pb10k" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PbHalfMarathon" class="control-label">Rekord w półmaratonie</label>
-                <input asp-for="PbHalfMarathon" class="form-control" />
-                <span asp-validation-for="PbHalfMarathon" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PbMarathon" class="control-label">Rekord w maratonie</label>
-                <input asp-for="PbMarathon" class="form-control" />
-                <span asp-validation-for="PbMarathon" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CountCompetitions" class="control-label">Liczba zawodów</label>
-                <input asp-for="CountCompetitions" class="form-control" />
-                <span asp-validation-for="CountCompetitions" class="text-danger"></span>
-            </div>
-            @*<div class="custom-file">
-                <label asp-for="ProfilePicture" class="custom-file-label">Wybierz plik</label>
-                <input asp-for="ProfilePicture" class="custom-file-input" />
-                <span asp-validation-for="ProfilePicture" class="text-danger"></span>
-            </div> *@
             <div class="form-group">
                 <input type="submit" value="Zapisz" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
-
+</br>
 <div>
     <a class="btn btn-success" asp-action="Details">Wróć</a>
 </div>

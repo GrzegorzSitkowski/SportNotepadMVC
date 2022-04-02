@@ -59,6 +59,13 @@ td {
     border-right: hidden;
 }
 
+.divRadius {
+    border: 2px solid lightgray;
+    border-radius: 25px;
+    background-color: #94BFB0;
+    font-weight: bold;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
