@@ -24,8 +24,7 @@ namespace SportNotepadMVC.Application.ViewModels.ProfileUser
 
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<Domain.Model.ProfileUser, ProfileUserDisplayVm>()
-                .ForMember(a => a.ProfilePicture, a => a.Ignore());
+            profile.CreateMap<Domain.Model.ProfileUser, ProfileUserDisplayVm>();
         }
     }
 }
