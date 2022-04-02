@@ -62,9 +62,22 @@ td {
 .divRadius {
     border: 2px solid lightgray;
     border-radius: 25px;
-    background-color: #94BFB0;
+    background-image: linear-gradient(to bottom right,white,#94BFB0);
     font-weight: bold;
 }
+
+.divRadius dl{
+    margin: 20px;
+}
+
+.divRadius dd{
+    font-weight:600;
+}
+
+.divRadius h4{
+    margin-left: 30px;
+    font-weight: bold;
+ }
 
 .btn-primary {
   color: #fff;
@@ -77,6 +90,8 @@ td {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
