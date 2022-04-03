@@ -64,6 +64,7 @@ td {
     border-radius: 25px;
     background-image: linear-gradient(to bottom right,white,#94BFB0);
     font-weight: bold;
+    padding: 5px 5px 5px 5px;
 }
 
 .divRadius dl{
