@@ -9,9 +9,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" style="font-weight:bold" asp-area="" asp-controller="Home" asp-action="Index">SportNotepad</a>
+                <a class="navbar-brand" style="font-weight:bold; color: lightgray" asp-area="" asp-controller="Home" asp-action="Index">SportNotepad</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -19,19 +19,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="ProfileUser" asp-action="Details">Profil</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="ProfileUser" asp-action="Details">Profil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Competition" asp-action="Index">Zawody</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Competition" asp-action="Index">Zawody</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Training" asp-action="Index">Treningi</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Training" asp-action="Index">Treningi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="PhotoGallery" asp-action="Index">Galeria</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="PhotoGallery" asp-action="Index">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Goal" asp-action="Index">Cele/Plany</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Goal" asp-action="Index">Cele/Plany</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
@@ -44,9 +44,9 @@
             @RenderBody()
         </main>
     </div>
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted bg-dark">
         <div class="container">
-            &copy; 2021 - SportNotepadMVC.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - Running application. Created by Grzegorz Sitkowski
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
