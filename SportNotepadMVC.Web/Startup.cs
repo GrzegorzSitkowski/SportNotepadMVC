@@ -68,11 +68,11 @@ namespace SportNotepadMVC.Web
                 facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
             });
 
-            services.AddAuthentication().AddMicrosoftAccount(microsoftOptions =>
+            /*services.AddAuthentication().AddMicrosoftAccount(microsoftOptions =>
             {
                 microsoftOptions.ClientId = Configuration["Authentication:Microsoft:ClientId"];
                 microsoftOptions.ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"];
-            });
+            });*/
 
             services.AddAuthorization(options =>
             {
