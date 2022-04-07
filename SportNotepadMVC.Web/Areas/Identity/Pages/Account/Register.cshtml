@@ -7,30 +7,45 @@
 <div class="divLogin">
     <div class="row">
         <div class="col">
-            <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
-                <h4 style="text-align:center">Stwórz nowe konto</h4>
-                <hr />
-                <div asp-validation-summary="All" class="text-danger"></div>
-                <div class="form-group">
-                    <label asp-for="Input.Email">Email</label>
-                    <input asp-for="Input.Email" class="form-control" />
-                    <span asp-validation-for="Input.Email" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Input.Password">Hasło</label>
-                    <input asp-for="Input.Password" class="form-control" />
-                    <span asp-validation-for="Input.Password" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Input.ConfirmPassword">Powtórz hasło</label>
-                    <input asp-for="Input.ConfirmPassword" class="form-control" />
-                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-                </div>
-                <button type="submit" class="btn btn-primary">
-                <i class="fas fa-registered"></i>
-                Rejestracja
-                </button>
-            </form>
+            <section>
+                <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                    <div class="form-group" style="text-align:center">
+                        <img src="~/css/register_picture.png" alt="Register" />
+                    </div>
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <h4 style="text-align:center">Stwórz nowe konto</h4>
+                    <div class="form-group">
+                        <label asp-for="Input.Email">
+                            <i class="fa fa-envelope"></i>
+                            Email
+                        </label>
+                        <input asp-for="Input.Email" placeholder="example@addres.com" class="form-control" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.Password">
+                            <i class="fa fa-lock"></i>
+                            Hasło
+                        </label>
+                        <input asp-for="Input.Password" placeholder="Password" class="form-control" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Input.ConfirmPassword">
+                            <i class="fa fa-lock"></i>
+                            Powtórz hasło
+                        </label>
+                        <input asp-for="Input.ConfirmPassword" placeholder="Password" class="form-control" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group" style="text-align:center">
+                        <button type="submit" class="btn btn-info rounded-pill">
+                            <i class="fas fa-sign-in-alt iconItem"></i>
+                            Stwórz konto
+                        </button>
+                    </div>
+                </form>
+            </section>
         </div>
     </div>
 </div>
