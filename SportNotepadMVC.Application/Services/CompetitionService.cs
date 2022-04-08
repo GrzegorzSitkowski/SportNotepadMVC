@@ -73,7 +73,7 @@ namespace SportNotepadMVC.Application.Services
             string fileName = path + "\\CompetitionList.txt";
             using StreamWriter sw = File.AppendText(fileName);
 
-            var competition = _competitionRepo.GetCompetitionById(1);
+            //var competition = _competitionRepo.GetCompetitionById(1);
             var competitionToFile = _competitionRepo.GetAllCompetitions();
             foreach(var item in competitionToFile)
             {
