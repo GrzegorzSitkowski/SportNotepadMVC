@@ -7,28 +7,32 @@
 <h1>Dodaj zdjęcie</h1>
 
 <hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="divRadius">
+    <div class="col-md-8">
         <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <input type="hidden" asp-for="Id" class="form-control" />
-            <div class="form-group">
-                <label asp-for="Title" class="control-label">Tytuł</label>
-                <input asp-for="Title" class="form-control" />
-                <span asp-validation-for="Title" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label">Nazwa</label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Path" class="control-label">Wybierz plik</label>
-                <div class="custom-file">
-                    <input asp-for="Path" class="custom-file-input" id="customFile" />
-                    <label asp-for="Path" class="custom-file-label" for="customFile"></label>
+            <input type="hidden" asp-for="Id" class="form-control" />
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Title" class="control-label">Tytuł</label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
                 </div>
-                <span asp-validation-for="Path" class="text-danger"></span>
+                <div class="form-group col-md-6">
+                    <label asp-for="Name" class="control-label">Nazwa</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group 6">
+                    <label asp-for="Path" class="control-label">Wybierz plik</label>
+                    <div class="custom-file">
+                        <input asp-for="Path" class="custom-file-input" id="customFile" />
+                        <label asp-for="Path" class="custom-file-label" for="customFile"></label>
+                    </div>
+                    <span asp-validation-for="Path" class="text-danger"></span>
+                </div>
             </div>
             <br />
             <div class="form-group">
@@ -37,7 +41,7 @@
         </form>
     </div>
 </div>
-
+</br>
 <div>
     <a class="btn btn-success" asp-action="Index">Wróć do listy</a>
 </div>
