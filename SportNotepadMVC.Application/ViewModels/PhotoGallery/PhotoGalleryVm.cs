@@ -18,8 +18,8 @@ namespace SportNotepadMVC.Application.ViewModels.PhotoGallery
 
         public void Mapping(Profile profile)
         {
-        //    profile.CreateMap<PhotoGalleryVm, Domain.Model.PhotoGallery>().ReverseMap()
-         //       .ForMember(a => a.Path, a => a.Ignore());
+            profile.CreateMap<PhotoGalleryVm, Domain.Model.PhotoGallery>().ReverseMap()
+                .ForMember(a => a.Path, a => a.Ignore());
         }
     }
 }
