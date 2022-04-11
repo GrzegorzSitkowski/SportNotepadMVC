@@ -23,14 +23,16 @@ namespace SportNotepadMVC.Web.Controllers
         }
 
         [Authorize(Roles = "Admin, User")]
+        [Authorize(Policy = "CanViewPhoto")]
         public ActionResult Index()
         {
             var photos = _photoGalleryService.GetAllPhotos();
             return View(photos);
         }
 
-        //[Authorize(Policy = "CanAddNewPhoto")]
+        
         [HttpGet]
+        [Authorize(Policy = "CanAddNewPhoto")]
         public ActionResult Create()
         {
             return View(new PhotoGalleryVm());

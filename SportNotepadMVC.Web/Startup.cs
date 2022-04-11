@@ -79,6 +79,9 @@ namespace SportNotepadMVC.Web
             {
                 options.AddPolicy("CanAddNewPhoto", policy =>
                 policy.RequireClaim("AddNewPhoto"));
+
+                options.AddPolicy("CanViewPhoto", policy =>
+                policy.RequireClaim("ViewPhotos"));
             });
 
         }
