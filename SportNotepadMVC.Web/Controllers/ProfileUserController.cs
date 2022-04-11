@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SportNotepadMVC.Application.Interfaces;
 using SportNotepadMVC.Application.ViewModels.ProfileUser;
@@ -20,7 +21,7 @@ namespace SportNotepadMVC.Web.Controllers
             _context = context;
             _profileUserService = profileUserService;
         }
-
+        [Authorize(Roles ="Admin,User")]
         public ActionResult Details()
         {
             var model = _profileUserService.DisplayProfileUser();

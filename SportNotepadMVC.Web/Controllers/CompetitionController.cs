@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SportNotepadMVC.Application.Interfaces;
 using SportNotepadMVC.Application.ViewModels.Competition;
@@ -20,6 +21,8 @@ namespace SportNotepadMVC.Web.Controllers
             _competitionService = competitionService;
             _context = context;
         }
+
+        [Authorize(Roles = "Admin,User")]
         public IActionResult Index()
         {
             var model = _competitionService.GetAllCompetitions();

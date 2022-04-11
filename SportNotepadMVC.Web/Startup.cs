@@ -52,6 +52,7 @@ namespace SportNotepadMVC.Web
                 options.Password.RequiredUniqueChars = 1;
 
                 options.SignIn.RequireConfirmedEmail = false;
+                options.SignIn.RequireConfirmedAccount = false;
             });
 
             services.AddAuthentication().AddGoogle(options =>

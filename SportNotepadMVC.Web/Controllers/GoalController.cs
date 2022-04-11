@@ -20,6 +20,7 @@ namespace SportNotepadMVC.Web.Controllers
             _goalService = goalService;
         }
 
+        [Authorize(Roles = "Admin,User")]
         [CheckPermission("Read")]
         public ActionResult Index()
         {

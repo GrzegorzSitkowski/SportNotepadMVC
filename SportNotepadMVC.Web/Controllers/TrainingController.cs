@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SportNotepadMVC.Application.Interfaces;
 using SportNotepadMVC.Application.ViewModels.Training;
@@ -21,6 +22,7 @@ namespace SportNotepadMVC.Web.Controllers
             _traningService = trainingService;
         }
 
+        [Authorize(Roles = "Admin,User")]
         public ActionResult Index()
         {
             var model = _traningService.GetAllTrainigs();
