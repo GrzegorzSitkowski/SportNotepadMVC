@@ -5,7 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.16" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SportNotepadMVC.Application\SportNotepadMVC.Application.csproj" />
+    <ProjectReference Include="..\SportNotepadMVC.Infrastructure\SportNotepadMVC.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
